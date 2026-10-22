@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/DavidObando/gsharp",
+  "commit": "a1190b9b77cd8c8aecf5b90cbd6774f26489989e",
+  "assets": {
+    "syntaxes/gsharp.tmLanguage.json": {
+      "sourcePath": "src/vscode-gsharp/syntaxes/gsharp.tmLanguage.json",
+      "sha256": "054efbf44742758928d396aa656a6965824c0c9830f76a92beb402062ae3a3f7"
+    },
+    "test/grammar-cases.json": {
+      "sourcePath": "src/vscode-gsharp/src/test/grammar-cases.json",
+      "sha256": "b8614c032d612ffa8f8f33b5d7810925bd1fcc93bf5efb4216e5a02b567cc92a"
+    },
+    "LICENSE": {
+      "sourcePath": "LICENSE",
+      "sha256": "3aecf85edc86b0abd748705c1f9b342ff198d9fecc723b6c51a0fe9179cad2da"
+    },
+    "test/reserved-keywords.json": {
+      "sourcePath": "src/Core/CodeAnalysis/Syntax/SyntaxFacts.gs",
+      "sourceSha256": "855a7e68d75e6d7c45e3a947e06b100a9887fac62f9e97ddc66cde1b4fb72cf7",
+      "sha256": "6d1c32e4484ee2fe903f841af8b803baf6e672e240ea59ac60aaa642fc26c901",
+      "derivation": "Sorted case \"word\" { labels, using /case\\s+\"([a-zA-Z]+)\"\\s*\\{/g, as in upstream grammar.test.ts"
+    }
+  },
+  "tokenizerHarness": {
+    "sourcePath": "src/vscode-gsharp/src/test/grammar.test.ts",
+    "sourceSha256": "f82e23c1991df03009f1bd28e5d999eb48f7870164eb4b7d6b96a55470f261e0",
+    "adaptation": "Node.js built-in test runner; same shared cases, character-scope assertions, and two generated vocabulary cases. Editor injection and compiler-source structural tests stay upstream."
+  }
+}
